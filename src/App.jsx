@@ -1,4 +1,3 @@
-// App.jsx
 import { Routes, Route } from "react-router-dom";
 import Header from "./Header";
 import HeroSection from "./HeroSection";
