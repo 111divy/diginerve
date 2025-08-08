@@ -13,22 +13,24 @@ const numbersData = [
 
 const NumbersSection = () => {
   return (
-    <div className="bg-blue-900 text-white py-16 px-4 w-full">
-      <div className="max-w-[1200px] mx-auto flex flex-col gap-12 items-center">
-        <div className="text-center max-w-3xl">
-          <h2 className="text-3xl font-bold mb-3">
+    <div className="bg-blue-900 text-white py-12 px-4 w-full">
+      <div className="max-w-[1200px] mx-auto flex flex-col gap-8 items-center">
+        {/* Heading */}
+        <div className="text-center max-w-3xl px-2">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-2">
             The Numbers Speak for Themselves
           </h2>
-          <p className="text-white/80 text-lg">
-            A platform built by experts, trusted by thousands of students, and{" "}
-            <br />
+          <p className="text-white/80 text-base sm:text-lg">
+            A platform built by experts, trusted by thousands of students, and
             backed by proven results.
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-4 lg:gap-10">
-          <div className="flex-shrink-0">
-            <div className="w-[493px] h-[331px] rounded-xl overflow-hidden">
+        {/* Image + Stats */}
+        <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-6 lg:gap-10">
+          {/* Left image */}
+          <div className="flex-shrink-0 w-full sm:w-[400px] md:w-[493px]">
+            <div className="rounded-xl overflow-hidden w-full aspect-[3/2]">
               <img
                 src={studentsImg}
                 alt="Students"
@@ -37,16 +39,17 @@ const NumbersSection = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-x-8 gap-y-6 w-full max-w-md">
+          {/* Stats */}
+          <div className="grid grid-cols-1 xs:grid-cols-2 gap-x-8 gap-y-6 w-full max-w-md">
             {numbersData.map((item, index) => (
               <div key={index} className="flex items-center gap-4">
                 <img
                   src={item.icon}
                   alt={item.label}
-                  className="w-[72px] h-[72px] object-contain"
+                  className="w-16 h-16 sm:w-[72px] sm:h-[72px] object-contain"
                 />
                 <div>
-                  <p className="text-xl font-bold">{item.count}</p>
+                  <p className="text-lg sm:text-xl font-bold">{item.count}</p>
                   <p className="text-sm text-white/80">{item.label}</p>
                 </div>
               </div>
