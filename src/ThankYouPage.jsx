@@ -1,4 +1,3 @@
-import React from "react";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 import image from "./assets/Images/image.png";
 import image1 from "./assets/Images/image1.png";
@@ -6,9 +5,7 @@ import image1 from "./assets/Images/image1.png";
 const ThankYouPage = () => {
   return (
     <div className="w-full min-h-screen mx-auto bg-white border relative overflow-hidden">
-      {/* Main content */}
       <div className="flex flex-col items-center pt-8 px-4 relative h-auto lg:h-[70%]">
-        {/* Logo */}
         <div className="absolute top-4 left-4">
           <img
             src={image}
@@ -17,7 +14,6 @@ const ThankYouPage = () => {
           />
         </div>
 
-        {/* Heading */}
         <h1 className="text-3xl sm:text-5xl font-bold text-blue-900 mt-20 text-center">
           Thank You!
         </h1>
@@ -25,7 +21,6 @@ const ThankYouPage = () => {
           Your payment was successful!
         </p>
 
-        {/* Description */}
         <p className="text-gray-500 text-base sm:text-xl text-center mt-2 max-w-md">
           Get started by downloading the DigiNerve app and access your courses
           instantly.
@@ -33,7 +28,6 @@ const ThankYouPage = () => {
           <span className="font-medium text-gray-700">Happy Learning!</span>
         </p>
 
-        {/* Download button */}
         <button className="mt-5 bg-blue-900 text-white px-4 sm:px-6 py-2 rounded-lg flex items-center gap-2 sm:gap-3 text-sm sm:text-base">
           DOWNLOAD THE APP
           <FaApple size={18} className="sm:size-5" />
@@ -57,7 +51,6 @@ const ThankYouPage = () => {
         </div>
       </div>
 
-      {/* Footer section */}
       <div className="absolute bottom-0 w-full bg-blue-950 py-8 sm:py-10 flex flex-col items-center px-4">
         <h2 className="text-white text-lg sm:text-xl font-bold mb-2 text-center">
           Never Miss an Update

@@ -35,7 +35,7 @@ const WhatYoullLearn = () => {
 
   return (
     <div className="w-full bg-white px-6 py-12 flex justify-center">
-      <div className="max-w-[990px] w-full flex flex-col lg:flex-row items-start gap-6">    
+      <div className="max-w-[990px] w-full flex flex-col lg:flex-row items-start gap-6">
         <div className="w-full lg:w-1/2 flex justify-center">
           <img
             src={compImg}
